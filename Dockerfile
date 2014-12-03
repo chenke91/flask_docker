@@ -11,6 +11,7 @@ ADD requirement.txt /data/requirement.txt
 RUN \
   apt-get update && \
   apt-get install -y python3-dev python3-pip && \
+  apt-get install -y libxml2-dev libxslt1-dev zlib1-dev && \
   rm -rf /var/lib/apt/lists/*
 
 # Install flask
